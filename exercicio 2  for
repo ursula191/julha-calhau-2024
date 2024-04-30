@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    int numeral;
+    for(numeral = 1; numeral<= 50; numeral++) {
+        printf("%d\n", numeral);
+    }
+    return 0;
+}
