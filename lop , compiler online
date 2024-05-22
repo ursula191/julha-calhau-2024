@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    // Criando um vetor para armazenar os valores
+    int valores[5];
+    int i, soma = 0;
+
+    // Pedindo ao usuário para inserir 5 valores inteiros
+    for (i = 0; i < 5; i++) {
+        printf("Digite o %dº valor inteiro: ", i + 1);
+        scanf("%d", &valores[i]);
+    }
+
+    // Calculando a soma dos valores
+    for (i = 0; i < 5; i++) {
+        soma += valores[i];
+    }
+
+    // Apresentando a soma
+    printf("A soma dos valores é: %d\n", soma);
+
+    return 0;
+}
