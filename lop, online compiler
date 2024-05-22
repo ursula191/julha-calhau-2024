@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+    // Criando um vetor para armazenar os valores
+    int valores[5];
+    int i, soma = 0;
+
+    // Pedindo ao usuário para inserir 5 valores inteiros
+    for (i = 0; i < 5; i++) {
+        printf("Digite o %dº valor inteiro: ", i + 1);
+        scanf("%d", &valores[i]);
+        soma += valores[i];
+    }
+
+    // Calculando a média dos valores
+    float media = (float)soma / 5;
+
+    // Apresentando a média
+    printf("A média dos valores é: %.2f\n", media);
+
+    // Verificando e apresentando valores maiores e menores que a média
+    printf("Valores maiores que a média: ");
+    for (i = 0; i < 5; i++) {
+        if (valores[i] > media) {
+            printf("%d ", valores[i]);
+        }
+    }
+    printf("\n");
+
+    printf("Valores menores que a média: ");
+    for (i = 0; i < 5; i++) {
+        if (valores[i] < media) {
+            printf("%d ", valores[i]);
+        }
+    }
+    printf("\n");
+
+    return 0;
+}
